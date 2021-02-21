@@ -1,0 +1,28 @@
+﻿#cicekci img{
+    width: 1290px;
+    height: 800px;
+}
+h1 {
+    text-align: center;
+    color: white;
+}
+h2 {
+    text-align: center;
+    color: white;
+}
+hr {
+    background-color: darkgrey;
+    width: 700px;
+}
+div {
+    font-size: 18px;
+    color:white
+}
+#altfoto img{
+    width:120px;
+    height:240px;
+}
+p {
+    font-family: 'Lora';
+    text-align:justify;
+}

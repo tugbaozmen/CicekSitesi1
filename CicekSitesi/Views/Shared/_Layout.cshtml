@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Assets/css/style.css" rel="stylesheet" />
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+</head>
+<body>
+
+
+    <h1 class="site-heading text-center text-white d-none d-lg-block" id="bas">
+        <span class="site-heading-lower">TUVAL ÇİÇEKÇİLİK</span>
+        <br />
+    </h1>
+
+
+    <!-- Menü Bölümü-->
+    <br />
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4 sticky-top" id="mainNav" style="background-color: #833471;" >
+        <div class="container" >
+            <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Tuval Çiçekçilik</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="/HomePage/Index">
+                            ANA SAYFA
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="/HomePage/AboutUs">HAKKIMIZDA</a>
+                    </li>
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="/HomePage/PotFlowers">SAKSI ÇİÇEKLERİ</a>
+                    </li>
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="/HomePage/Bundles">DEMETLER</a>
+                    </li>
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="/HomePage/Dealers">ŞUBELERİMİZ</a>
+                    </li>
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="/HomePage/Contact">İLETİŞİM</a>
+                    </li>
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="/HomePage/Login">GİRİŞ YAP</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="content">
+        <div class="container-fluid">
+            @RenderBody()
+        </div>
+    </section>
+
+    <!-- Footer Bölümü -->
+    
+    <div class="container-fluid" id="footer">
+        <br />
+        <hr />
+        <h3 id="h3"><strong>Bizi Takip Edin</strong> </h3>
+        <hr />
+        <br />
+        <div class="row" >
+            <div class="col-md-1 offset-3">
+                <a href="javascript:void();">
+                    <img src="https://img.icons8.com/nolan/64/instagram-new.png" />
+                </a>
+            </div>
+            <div class="col-md-1">
+                <a href="javascript:void();">
+                    <img src="https://img.icons8.com/nolan/64/facebook-new.png" />
+                </a>
+            </div>
+            <div class="col-md-1">
+                <a href="javascript:void();">
+                    <img src="https://img.icons8.com/nolan/64/twitter.png" />
+                </a>
+            </div>
+            <div class="col-md-1">
+                <a href="javascript:void();">
+                    <img src="https://img.icons8.com/nolan/64/pinterest.png" />
+                </a>
+            </div>
+            <div class="col-md-1">
+                <a href="javascript:void();">
+                    <img src="https://img.icons8.com/nolan/64/youtube-squared.png" />
+                </a>
+            </div>
+            <div class="col-md-1">
+                <a href="javascript:void();">
+                    <img src="https://img.icons8.com/nolan/64/email.png" />
+                </a>
+            </div>
+            <div class="col-md-12">
+                <hr />
+            </div>
+            <div class="col-md-12">
+                <p>&copy; 2020-Tuval Çiçekçilik. Tüm Hakları Tuğba ÖZMEN'e Aittir.</p>
+            </div>
+            <div class="col-md-12">
+                <a href="#bas"><img src="https://img.icons8.com/metro/26/000000/up-squared.png" /></a>
+                <p>Başa Dön</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/popper.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>

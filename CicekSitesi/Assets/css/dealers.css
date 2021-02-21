@@ -1,0 +1,22 @@
+﻿h2 {
+    font-family: Lora;
+    color: white;
+    text-align: center
+}
+
+hr {
+    background-color: darkgrey;
+    width: 400px;
+}
+
+#subeler img{
+    width:500px;
+    height:800px;
+}
+
+.row {
+    font-family: Lora;
+    color: white;
+}
+
+

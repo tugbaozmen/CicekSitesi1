@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "SignUp";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/Assets/css/contact.css" rel="stylesheet" />
+<br />
+<div class="container">
+    <div class="row offset-4" id="orta">
+        <div class="row offset-4" id="orta">
+            <form>
+                <div class="cols-md-4">
+                    <div class="form-group">
+                        <h5 id="baslik1"><strong>KAYIT OL</strong></h5>
+                    </div>
+                </div>
+                <div class="cols-md-4">
+                    <div class="form-group">
+                        <input id="ad" type="text" class="form-control" placeholder="Ad*" />
+                    </div>
+                </div>
+                <div class="cols-md-4">
+                    <div class="form-group">
+                        <input id="soyad" type="text" class="form-control" placeholder="Soyad*" />
+                    </div>
+                </div>
+                <div class="cols-md-4">
+                    <div class="form-group">
+                        <input id="dogumtarihi" type="datetime" class="form-control" placeholder="Doğum Tarihi*" />
+                    </div>
+                </div>
+                <div class="cols-md-4">
+                    <div class="form-group">
+                        <input id="mail" type="email" class="form-control" placeholder="Email*" />
+                    </div>
+                </div>
+                <div class="cols-md-4">
+                    <div class=" form-group">
+                        <input type="password" class="form-control" placeholder="Şifre*" />
+                    </div>
+                </div>
+                @*<div class="cols-md-4">
+                    <div class=" form-group">
+                        <input type="password" class="form-control" placeholder="Şifre*" />
+                    </div>
+                </div>*@
+                <div class="cols-md-4">
+                    <div class="form-group">
+                        <button type="submit" class="btn w-100">Kayıt Ol</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<br />

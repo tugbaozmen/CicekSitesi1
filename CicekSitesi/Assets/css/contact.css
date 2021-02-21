@@ -1,0 +1,45 @@
+﻿.container {
+    padding-top: 10px;
+    text-align: center;
+    position: relative;
+    margin: auto;
+}
+#orta {
+    position: relative;
+    margin: auto;
+}
+.container button {
+    background-color: #833471;
+    color: white;
+    width: 275px;
+    height: 50px;
+}
+
+textarea {
+    width: 275px;
+    height: 150px;
+}
+
+
+h5 {
+    font-family: 'Lora';
+    color: white;
+}
+
+#mail {
+    width: 275px;
+}
+
+#cizgi {
+    width: 1px;
+    height: 300px;
+    background-color: darkgrey
+}
+
+hr {
+    background-color: darkgrey;
+    width: 700px;
+}
+label{
+    color:white;
+}

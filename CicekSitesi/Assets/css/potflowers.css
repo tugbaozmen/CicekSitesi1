@@ -1,0 +1,41 @@
+﻿h2 {
+    font-family: Lora;
+    color: white;
+    text-align: center
+}
+hr {
+    background-color: darkgrey;
+    width: 600px;
+}
+#ozel img{
+    width:187px;
+    height:285px;
+}
+#ev img {
+    width: 187px;
+    height: 285px;
+}
+#ofis img {
+    width: 187px;
+    height: 285px;
+}
+#bahce img {
+    width: 183px;
+    height: 285px;
+}
+#ozel a {
+    background-color: #6D214F;
+    color: white;
+}
+#ev a {
+    background-color: #6D214F;
+    color: white;
+}
+#ofis a {
+    background-color: #6D214F;
+    color: white;
+}
+#bahce a {
+    background-color: #6D214F;
+    color: white;
+}

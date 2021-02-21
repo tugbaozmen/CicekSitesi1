@@ -1,0 +1,45 @@
+﻿h2 {
+    font-family: Lora;
+    color: white;
+    text-align: center
+}
+
+hr {
+    background-color: darkgrey;
+    width: 800px;
+}
+
+#renkkatan img {
+    width: 187px;
+    height: 250px;
+}
+#ozelgun img {
+    width: 187px;
+    height: 250px;
+}
+#ortamcicegi img {
+    width: 187px;
+    height: 250px;
+}
+#gunluk img {
+    width: 187px;
+    height: 250px;
+}
+
+#renkkatan a {
+    background-color: #6D214F;
+    color: white;
+}
+
+#ozelgun a {
+    background-color: #6D214F;
+    color: white;
+}
+#ortamcicegi a {
+    background-color: #6D214F;
+    color: white;
+}
+#gunluk a {
+    background-color: #6D214F;
+    color: white;
+}

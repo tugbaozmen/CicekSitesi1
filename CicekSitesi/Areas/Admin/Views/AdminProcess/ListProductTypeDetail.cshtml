@@ -1,0 +1,95 @@
+﻿@model IEnumerable<CicekSitesi.Model.ProductTypeDetail>
+
+@{
+    ViewBag.Title = "ListProductTypeDetail";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>ListProductTypeDetail</h2>
+
+
+
+<h2>ListProductType</h2>
+
+<h2>Ürün Listesi</h2>
+<br />
+<div class="container" style="margin-left:250px; margin-right:20px;">
+
+
+    <table class="table table-bordered">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TypeDetailName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsActive)
+            </th>
+            <th>
+                Güncelle
+            </th>
+            <th>
+                Aktif/Pasif
+            </th>
+            <th>
+                Sil
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreatedDate, new { @class = "btnName" })
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TypeDetailName, new { @class = "btnName" })
+
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IsActive, new { @class = "btnName" })
+
+                </td>
+                <td>
+                    @Html.ActionLink("Güncelle", "UpdateProductTypeDetail", new { id = item.ProductTypeDetailId }, new { @class = "btn btn-success" })
+                </td>
+                <td>
+                    <button href="#" name="brandActive" class="btn btn-primary  btnActivate" data="@item.ProductTypeDetailId">
+                        Aktif/Pasif
+                    </button>
+                </td>
+                <td>
+                    @Html.ActionLink("Sil", "DeleteProductTypeDetail", new { id = item.ProductTypeDetailId }, new { @class = "btn btn-danger", onclick = "return confirm('Gerçekten silmek istiyor musunuz?')" })
+                </td>
+            </tr>
+        }
+
+    </table>
+    <br />
+    <hr />
+    @Html.ActionLink("Alt Kategori Ekleme Sayfasına Git", "CreatedProductTypeDetail")
+
+</div>
+@section scripts{
+    <script>
+        $(".btnDelete").click(function () {
+            var productId = $(this).attr("dataproductID");
+            $.ajax({
+                url: "/AdminProcess/DeleteProductTypeDetail/" + productId,
+                type: "POST",
+                success: function (data) {
+                    if (data == "ok") {
+                        alert("Silme İşlemi Başarılı");
+                        window.location.reload();
+                    }
+                },
+                error: function (err) {
+                    alert("Hata Oluştu");
+                    console.log(err);
+                }
+            });
+        })
+    </script>
+}

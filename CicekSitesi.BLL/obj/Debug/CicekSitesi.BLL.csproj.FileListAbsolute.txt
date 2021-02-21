@@ -1,0 +1,15 @@
+C:\Users\tugba\Desktop\CicekSitesi\CicekSitesi.BLL\bin\Debug\CicekSitesi.BLL.dll.config
+C:\Users\tugba\Desktop\CicekSitesi\CicekSitesi.BLL\bin\Debug\CicekSitesi.BLL.dll
+C:\Users\tugba\Desktop\CicekSitesi\CicekSitesi.BLL\bin\Debug\CicekSitesi.BLL.pdb
+C:\Users\tugba\Desktop\CicekSitesi\CicekSitesi.BLL\bin\Debug\CicekSitesi.DAL.dll
+C:\Users\tugba\Desktop\CicekSitesi\CicekSitesi.BLL\bin\Debug\CicekSitesi.Model.dll
+C:\Users\tugba\Desktop\CicekSitesi\CicekSitesi.BLL\bin\Debug\EntityFramework.dll
+C:\Users\tugba\Desktop\CicekSitesi\CicekSitesi.BLL\bin\Debug\CicekSitesi.DAL.pdb
+C:\Users\tugba\Desktop\CicekSitesi\CicekSitesi.BLL\bin\Debug\CicekSitesi.DAL.dll.config
+C:\Users\tugba\Desktop\CicekSitesi\CicekSitesi.BLL\bin\Debug\CicekSitesi.Model.pdb
+C:\Users\tugba\Desktop\CicekSitesi\CicekSitesi.BLL\bin\Debug\EntityFramework.xml
+C:\Users\tugba\Desktop\CicekSitesi\CicekSitesi.BLL\obj\Debug\CicekSitesi.BLL.csprojAssemblyReference.cache
+C:\Users\tugba\Desktop\CicekSitesi\CicekSitesi.BLL\obj\Debug\CicekSitesi.BLL.csproj.CoreCompileInputs.cache
+C:\Users\tugba\Desktop\CicekSitesi\CicekSitesi.BLL\obj\Debug\CicekSitesi.BLL.csproj.CopyComplete
+C:\Users\tugba\Desktop\CicekSitesi\CicekSitesi.BLL\obj\Debug\CicekSitesi.BLL.dll
+C:\Users\tugba\Desktop\CicekSitesi\CicekSitesi.BLL\obj\Debug\CicekSitesi.BLL.pdb

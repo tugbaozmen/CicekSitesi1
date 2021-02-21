@@ -1,0 +1,6 @@
+C:\Users\tugba\Desktop\CicekSitesi\CicekSitesi.Model\bin\Debug\CicekSitesi.Model.dll
+C:\Users\tugba\Desktop\CicekSitesi\CicekSitesi.Model\bin\Debug\CicekSitesi.Model.pdb
+C:\Users\tugba\Desktop\CicekSitesi\CicekSitesi.Model\obj\Debug\CicekSitesi.Model.csprojAssemblyReference.cache
+C:\Users\tugba\Desktop\CicekSitesi\CicekSitesi.Model\obj\Debug\CicekSitesi.Model.csproj.CoreCompileInputs.cache
+C:\Users\tugba\Desktop\CicekSitesi\CicekSitesi.Model\obj\Debug\CicekSitesi.Model.dll
+C:\Users\tugba\Desktop\CicekSitesi\CicekSitesi.Model\obj\Debug\CicekSitesi.Model.pdb

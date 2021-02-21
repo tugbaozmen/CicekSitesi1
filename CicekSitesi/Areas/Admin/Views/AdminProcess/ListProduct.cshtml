@@ -1,0 +1,119 @@
+﻿@model IEnumerable<CicekSitesi.Model.Product>
+
+@{
+    ViewBag.Title = "ListProduct";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Ürün Listesi</h2>
+<br />
+<div class="container" style="margin-left:265px; margin-right:20px;">
+
+
+    <table class="table table-bordered">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsActive)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnitPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnitsInStock)
+            </th>
+            <th>
+                Güncelle
+            </th>
+            <th>
+                Aktif/Pasif
+            </th>
+            <th>
+                Sil
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Photo)
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreatedDate, new { @class = "btnName" })
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductName, new { @class = "btnName" })
+
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description, new { @class = "btnName" })
+
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IsActive, new { @class = "btnName" })
+
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UnitPrice, new { @class = "btnName" })
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UnitsInStock)
+                </td>
+                <td>
+
+                    @Html.ActionLink("Güncelle", "UpdateProduct", new { id = item.ProductId }, new { @class = "btn btn-success" })
+
+                </td>
+                <td>
+                    <button href="#" name="brandActive" class="btn btn-primary  btnActivate" data="@item.ProductId">
+                        Aktif/Pasif
+                    </button>
+                </td>
+                <td>
+                    @Html.ActionLink("Sil", "DeleteProduct", new { id = item.ProductId }, new { @class = "btn btn-danger", onclick = "return confirm('Gerçekten silmek istiyor musunuz?')" })
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Photo, new { @class = "btnName" })
+            </td>
+        </tr>
+    }
+
+    </table>
+
+
+    <br />
+    <hr />
+    @Html.ActionLink("Ürün Ekleme Sayfasına Git", "CreateProduct")
+
+</div>
+@section scripts{
+    <script>
+        $(".btnDelete").click(function () {
+            var productId = $(this).attr("dataproductID");
+            $.ajax({
+                url: "/AdminProcess/DeleteProduct/" + productId,
+                type: "POST",
+                success: function (data) {
+                    if (data == "ok") {
+                        alert("Silme İşlemi Başarılı");
+                        window.location.reload();
+                    }
+                },
+                error: function (err) {
+                    alert("Hata Oluştu");
+                    console.log(err);
+                }
+            });
+        })
+    </script>
+    
+    }

@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/Assets/css/contact.css" rel="stylesheet" />
+
+<div class="container">
+    <div class="row offset-4" id="orta">
+        <div class="row offset-4" id="orta">
+            <form>
+                <div class="cols-md-4">
+                    <div class="form-group">
+                        <h5 id="baslik1"><strong>GİRİŞ YAP</strong></h5>
+                    </div>
+                </div>
+                <div class="cols-md-4">
+                    <div class="form-group">
+                        <input id="mail" type="email" class="form-control" placeholder="Email*" />
+                    </div>
+                </div>
+                <div class="cols-md-4">
+                    <div class=" form-group">
+                        <input type="password" class="form-control" placeholder="Şifre*" />
+                    </div>
+                </div>
+                <div class="cols-md-4">
+                    <div class=" form-group">
+                        <input id="benihatirla" type="checkbox" class="form-check-input" />
+                        <label for="benihatirla">Beni Hatırla</label>
+                    </div>
+                </div>
+                <div class="cols-md-4">
+                    <div class="form-group">
+                        <button type="submit" class="btn w-100">Giriş Yap</button>
+                    </div>
+                </div>
+                <div class="cols-md-4">
+                    <div class="form-group">
+                        <button type="submit" class="btn w-100">Şifremi Unuttum</button>
+                    </div>
+                </div>
+                <div class="cols-md-4">
+                    <div class="form-group">
+                        <button type="submit" class="btn w-100"><a href="/HomePage/SignUp" style="color:white;">Kayıt Ol</a></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
